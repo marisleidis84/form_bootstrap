@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <span class="navbar-brand">Payment form Example</>
+        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light alert-danger mt-4">
+                <span class="navbar-brand">some field are missing</>
+            </nav>
+            <form class="needs-validation mt-3" novalidate>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Card number</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="xxxx-xxxx-xxxx">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom02">CW</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="0000">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustomUsername">Amount</label>
+                        <input type="text" class="form-control" placeholder="Insert amount">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Insert name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Lastname</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Insert lastname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">City</label>
+                        <input type="text" class="form-control" placeholder="Insert city">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom04">State</label>
+                        <select class="custom-select">
+                            <option selected disabled value="">option1</option>
+                            <option>option2</option>
+                            <option>option3</option>
+                            <option>option4</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Zip</label>
+                        <input type="text" class="form-control" placeholder="Insert zip">
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
