@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3" style="border: 1px solid #e9e3e3;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <span class="navbar-brand">Payment form Example</>
         </nav>
@@ -67,14 +67,36 @@
                     <div class="col-md-3 mb-3">
                         <label for="validationCustom05">Zip</label>
                         <input type="text" class="form-control" placeholder="Insert zip">
-                        <div class="invalid-feedback">
-                            Please provide a valid zip.
-                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">We acept</label>
+                        <div class="fondo"
+                            style="background-color: grey; width: 180px; height: 30px; text-align: center; padding-top: 3px;">
+                            <input type="radio">
+                            <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                            <input type="radio">
+                            <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                            <input type="radio">
+                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                            <input type="radio">
+                            <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Comment</label><br>
+                        <textarea id="w3mission" rows="4" cols="73"></textarea>
+                    </div>
+                </div>
         </div>
+        <div class="card-footer d-flex justify-content-end">
+            <button class="btn btn-secondary" type="submit">Cancel</button>
+            <button class="btn btn-primary ml-2" type="submit">Send</button>
+        </div>
+    </div>
+    </form>
+    </div>
     </div>
 </body>
 
